@@ -15,7 +15,7 @@
     [self.paymentDelegate processPaymentAmount:paymentAmount];
 }
     else {
-        NSLog(@"Your payment cannot be processed");
+        NSLog(@"Sorry, your payment cannot be processed");
     }
 }
 
