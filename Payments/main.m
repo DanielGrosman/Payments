@@ -11,6 +11,7 @@
 #import "AmazonPaymentService.h"
 #import "StripePaymentService.h"
 #import "PayPalPaymentService.h"
+#import "ApplePaymentService.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,7 +19,7 @@ int main(int argc, const char * argv[]) {
         int randomValue = arc4random_uniform(901)+100;
         
         // Log out a message that prints the random value and presents options for payment methods
-        NSLog (@"Thank you for shopping at Acme.com Your total today is $%d. Please select your payment method:\n1: Paypal\n2: Stripe\n3: Amazon", randomValue);
+        NSLog (@"Thank you for shopping at Acme.com Your total today is $%d. Please select your payment method:\n1: Paypal\n2: Stripe\n3: Amazon\n4: ApplePay", randomValue);
         
         // Takes the user's input on the payment option, parses it, and converts it to an NSInteger value
         char inputValue [10];
@@ -46,6 +47,12 @@ int main(int argc, const char * argv[]) {
             case 3:
             {AmazonPaymentService *amazonPaymentService = [[AmazonPaymentService alloc] init];
                 paymentGateWay.paymentDelegate = amazonPaymentService;
+                [paymentGateWay processPaymentAmount:randomValue];
+            }
+                break;
+            case 4:
+            {ApplePaymentService *applePaymentService = [[ApplePaymentService alloc] init];
+                paymentGateWay.paymentDelegate = applePaymentService;
                 [paymentGateWay processPaymentAmount:randomValue];
             }
                 break;

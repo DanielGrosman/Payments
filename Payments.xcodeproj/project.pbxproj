@@ -12,6 +12,7 @@
 		C07D9EE91FAC11B50057075C /* PayPalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EE81FAC11B50057075C /* PayPalPaymentService.m */; };
 		C07D9EEC1FAC11D70057075C /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EEB1FAC11D70057075C /* StripePaymentService.m */; };
 		C07D9EEF1FAC11E90057075C /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EEE1FAC11E90057075C /* AmazonPaymentService.m */; };
+		C07D9EF21FAC39460057075C /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EF11FAC39460057075C /* ApplePaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		C07D9EEB1FAC11D70057075C /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
 		C07D9EED1FAC11E90057075C /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
 		C07D9EEE1FAC11E90057075C /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		C07D9EF01FAC39460057075C /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		C07D9EF11FAC39460057075C /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				C07D9EDD1FAC08810057075C /* main.m */,
+				C07D9EF01FAC39460057075C /* ApplePaymentService.h */,
+				C07D9EF11FAC39460057075C /* ApplePaymentService.m */,
 				C07D9EED1FAC11E90057075C /* AmazonPaymentService.h */,
 				C07D9EEE1FAC11E90057075C /* AmazonPaymentService.m */,
 				C07D9EEA1FAC11D70057075C /* StripePaymentService.h */,
@@ -142,6 +147,7 @@
 				C07D9EDE1FAC08810057075C /* main.m in Sources */,
 				C07D9EEF1FAC11E90057075C /* AmazonPaymentService.m in Sources */,
 				C07D9EE61FAC0C690057075C /* PaymentGateway.m in Sources */,
+				C07D9EF21FAC39460057075C /* ApplePaymentService.m in Sources */,
 				C07D9EE91FAC11B50057075C /* PayPalPaymentService.m in Sources */,
 				C07D9EEC1FAC11D70057075C /* StripePaymentService.m in Sources */,
 			);
